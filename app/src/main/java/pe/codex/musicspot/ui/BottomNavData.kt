@@ -1,24 +1,20 @@
 package pe.codex.musicspot.ui
 
+import androidx.annotation.DrawableRes
+import androidx.annotation.IdRes
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Feed
-import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.Search
-import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.outlined.AccountCircle
-import androidx.compose.material.icons.outlined.Home
 import androidx.compose.material.icons.outlined.LibraryMusic
-import androidx.compose.material.icons.outlined.Search
-import androidx.compose.ui.graphics.vector.ImageVector
+import pe.codex.musicspot.R
 
 data class BottomNavData(
     val title: Navigation,
-    val icon: ImageVector
+    @DrawableRes val icon: Int
 )
 
 val bottomNavItems = listOf(
-    BottomNavData(Navigation.Home, Icons.Outlined.Home),
-    BottomNavData(Navigation.Search, Icons.Outlined.Search),
-    BottomNavData(Navigation.Library, Icons.Outlined.LibraryMusic),
-    BottomNavData(Navigation.Profile, Icons.Outlined.AccountCircle)
+    BottomNavData(Navigation.Home, R.drawable.ic_home),
+    BottomNavData(Navigation.Search, R.drawable.ic_search),
+    BottomNavData(Navigation.Library, R.drawable.ic_stacked_books),
+    BottomNavData(Navigation.Profile, R.drawable.ic_profile)
 )
