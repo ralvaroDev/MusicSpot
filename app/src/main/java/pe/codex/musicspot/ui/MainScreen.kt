@@ -14,6 +14,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import pe.codex.musicspot.ui.components.BottomNavigationBar
+import pe.codex.musicspot.ui.theme.MusicSpotTheme
 
 @ExperimentalMaterial3Api
 @Composable
@@ -56,5 +57,5 @@ enum class Navigation {
 @Preview(showBackground = true)
 @Composable
 fun AppScreenPreview() {
-    AppScreen()
+    MusicSpotTheme { AppScreen() }
 }

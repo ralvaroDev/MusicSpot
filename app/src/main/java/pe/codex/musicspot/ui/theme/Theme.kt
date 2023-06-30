@@ -30,7 +30,7 @@ val LocalExtendedColors = staticCompositionLocalOf { lightColorMusicScheme() }
 private val LightColorScheme = lightColorMusicScheme(
     textColor = Color.White,
     background = DarkBlue,
-    onBackground = LightBlue,
+    backgroundVariant = LightBlue,
     primary = Green40,
     secondary = GrayDark,
     secondaryVariant = GrayLight
@@ -81,7 +81,7 @@ object MusicTheme {
 data class MusicColorScheme(
     val textColor: Color,
     val background: Color,
-    val onBackground: Color,
+    val backgroundVariant: Color,
     val primary: Color,
     val secondary: Color,
     val secondaryVariant: Color,
@@ -91,7 +91,7 @@ data class MusicColorScheme(
 fun lightColorMusicScheme(
     textColor: Color = Color.White,
     background: Color = DarkBlue,
-    onBackground: Color = LightBlue,
+    backgroundVariant: Color = LightBlue,
     primary: Color = Green40,
     secondary: Color = GrayDark,
     secondaryVariant: Color = GrayLight,
@@ -100,7 +100,7 @@ fun lightColorMusicScheme(
     MusicColorScheme(
         textColor = textColor,
         background = background,
-        onBackground = onBackground,
+        backgroundVariant = backgroundVariant,
         primary = primary,
         secondary = secondary,
         secondaryVariant = secondaryVariant,

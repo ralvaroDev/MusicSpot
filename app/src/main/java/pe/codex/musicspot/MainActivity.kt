@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import pe.codex.musicspot.ui.AppScreen
 import pe.codex.musicspot.ui.theme.MusicSpotTheme
+import pe.codex.musicspot.ui.theme.MusicTheme
 
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
+                    color = MusicTheme.colors.background
                 ) {
                     AppScreen()
                 }
