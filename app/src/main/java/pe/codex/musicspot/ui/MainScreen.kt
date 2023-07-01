@@ -37,7 +37,7 @@ fun AppScreen(
                 SearchScreen()
             }
             composable(route = Navigation.Library.name) {
-                HomeScreen()
+                ProducerFragment()
             }
             composable(route = Navigation.Profile.name) {
                 SearchScreen()
